@@ -4,3 +4,73 @@
     font-family: "Mulish", "sans-serif";
     font-size: 16px;
 }
+
+
+.hero-section{    
+    background-image: linear-gradient(to right, #0a1f58, #080c18);
+    padding: 2rem 5rem;
+}
+
+header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    margin-right: 5rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+header li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding-right: 2rem;
+}
+header button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+}
+header button:hover{
+    background-color: #f8458a;
+    color: white;
+    border: 1px solid #f8458a;
+}
+
+.hero-section section {
+    display: flex;
+    margin-top: 40px;
+    height: 460px;
+}
+.left-content{
+    color: white;
+    padding-top: 100px;
+    width: 540px;
+}
+.left-content h1{
+    font-size: 4rem;
+}
+.left-content p{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.left-content button{
+    background-color: #f8458a;
+    color: white;
+    border: 1px solid #f8458a;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+}
+.left-content button:hover{
+    box-shadow: 2px 4px 14px #080c18;
+}
+.right-content img{
+    position: absolute;
+    height: 500px;
+    right: 85px;  
+}
