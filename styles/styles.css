@@ -4,12 +4,6 @@
     font-family: "Mulish", "sans-serif";
     font-size: 16px;
 }
-body {
-  margin:0px;
-  padding: 0px;
-  /* width: 100vw; */
-}
-
 
 .hero-section{    
     background-image: linear-gradient(to right, #0a1f58, #080c18);
@@ -154,7 +148,7 @@ header .hamburger {
 
 .promotions {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 5rem 4rem;
     background-color: #e2e8ff;
@@ -166,12 +160,11 @@ header .hamburger {
     box-shadow: 2px 12px 22px -6px #afafb4;
     width: 400px;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 5px;
-    padding: 20px 0;
+    padding: 20px;
 
-    position: relative;
+    position: absolute;
     bottom: 220px;
     left: 300px;
 }   
@@ -190,6 +183,11 @@ header .hamburger {
 .promotions .notification-container p {
     margin-bottom: 0;
     font-size: 1rem;
+}
+
+.promotions .image-container .img {
+    position: relative;
+    
 }
 
 .business-container {
@@ -221,7 +219,7 @@ header .hamburger {
 .business-container .item .logo-container {
     background-color: #f8f9ff;
     box-shadow: 2px 12px 22px -6px #c0c5e2;
-    width: 120px;
+    min-width: 60px;
     height: 60px;
     border-radius: 10px;
     display: flex;
@@ -254,7 +252,7 @@ header .hamburger {
 
 /* for 1200px and less devices */
 @media only screen and (max-width: 1200px) {
-    .hero-section {
+    .hero-section, .services, .promotions {
         padding: 2rem 2rem;
     }
     header .hamburger {
@@ -287,32 +285,73 @@ header .hamburger {
     .right-content img{
         height: 460px;
     }
-    .promotions .image-container img {
-        height: 30vw;
+
+    .promotions .image-container .img img {
+        display: block;
+        margin: auto;
+        width: 100%;
     }
+
+    .promotions .notification-container {
+        background-color: #f8f9ff;
+        box-shadow: 2px 20px 31px #16171c;
+        width: 400px;
+        border-radius: 5px;
+        padding: 20px;
+        bottom: 0px;
+        left: 0px;
+        width: 92%;
+        margin: 4%;
+        margin-bottom: 3%;
+    }  
     
 }
 
-/* for 992px and less devices */
-@media screen and (max-width: 992px) {
+/* for devices less than 992px */
+@media screen and (max-width: 991px) {
     .hero-section{
         width: 100%;
-        margin: left 0;
-
     }
     .left-content {
-        min-width: -webkit-fill-available;
         margin-top: 10px;
+        width: 100%;
     }
     .left-content p{
         font-size: 1.2rem;
         font-weight: 100;
     }
 
-    .right-content img{
+    .right-content{
         display: none;
     } 
-    .promotions .image-container img {
-        height: 70vw;
-    }  
+    .services .headings h1 {
+        font-size: 6vw;
+    }
+    .promotions {
+        padding: 2rem;
+    }
+    .business-container {
+        height: auto;
+    }
+    .business-container h1{
+        margin-top: 30px;
+    }
+    .business-container .item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .business-container .item span{
+        margin-bottom: 10px;
+    }
+
+}
+
+/* for 576px and less devices */
+@media screen and (max-width: 576px) {
+    .services .headings h1 {
+        width: 400px;
+    }
+    
 }
