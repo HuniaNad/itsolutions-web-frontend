@@ -73,9 +73,9 @@ header .hamburger {
     font-weight: 100;
 }
 .left-content button{
-    background-color: #f8458a;
+    background-image: linear-gradient(#f8458a, #ff9913ee);
     color: white;
-    border: 1px solid #f8458a;
+    border: none;
     border-radius: 30px;
     padding: 10px 22px;
     line-height: normal;
@@ -92,66 +92,7 @@ header .hamburger {
     right: 60px;  
 }
 
-/* for 1200px and less devices */
-@media only screen and (max-width: 1200px) {
-    .hero-section {
-        padding: 2rem 2rem;
-    }
-    header .hamburger {
-        display: block;
-        background-color: transparent;
-        color: white;
-        border-radius: 20px;
-        padding: 10px 22px;
-        line-height: normal;
-    }
-    header .hamburger span{
-        padding-right: 10px;
-        font-size: 1.2rem;
-    }
-    header .hamburger:hover {
-        text-shadow: 2px 4px 14px #455074;
-        color: white;
-        cursor: pointer;
-    }
-
-    header button, .nav-menu {
-        display: none;
-    }
-    .left-content h1{
-        font-size: 6vw;
-    }
-    .right-content{
-        width: 50%;
-    }
-    .right-content img{
-        height: 460px;
-    }
-    
-}
-
-/* for 992px and less devices */
-@media screen and (max-width: 992px) {
-    .hero-section{
-        width: 100%;
-        margin: left 0;
-
-    }
-    .left-content {
-        min-width: -webkit-fill-available;
-        margin-top: 10px;
-    }
-    .left-content p{
-        font-size: 1.2rem;
-        font-weight: 100;
-    }
-
-    .right-content img{
-        display: none;
-    }   
-}
-
-.services {
+.services{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,6 +112,7 @@ header .hamburger {
 }
 .services .headings h1{
     width: 500px;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -208,8 +150,169 @@ header .hamburger {
 .gallery .item .service-heading {
     font-weight: bold;
     margin-top: 20px;
-
 }
-.gallery .item .service-desc {
 
+.promotions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 4rem;
+    background-color: #e2e8ff;
+    margin: 0 0 !important;
+}
+
+.promotions .notification-container {
+    background-color: #f8f9ff;
+    box-shadow: 2px 12px 22px -6px #afafb4;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px 0;
+
+    position: relative;
+    bottom: 220px;
+    left: 300px;
+}   
+.promotions .notification-container span {
+    background-color: #fae0ea;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.promotions .notification-container .feature-heading {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.promotions .notification-container p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.business-container {
+    height: 500px;
+}
+.business-container h1 {
+    width: 300px;
+    font-weight: bold;
+}
+
+.business-container .item {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.business-container .item button{
+    background-color: #f8458a;
+    background-image: linear-gradient(#f8458a, #ff8f00c4);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+}
+.business-container button:hover{
+    box-shadow: 2px 4px 14px #777a86;
+}
+
+.business-container .item .logo-container {
+    background-color: #f8f9ff;
+    box-shadow: 2px 12px 22px -6px #c0c5e2;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.business-container .item .logo-container i {
+    color: #f8458a;
+    font-size: 1.5rem;
+}
+
+.business-container .headings {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.business-container .business-heading {
+    font-weight: bold;
+}
+.business-container .business-desc {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* for 1200px and less devices */
+@media only screen and (max-width: 1200px) {
+    .hero-section {
+        padding: 2rem 2rem;
+    }
+    header .hamburger {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 22px;
+        line-height: normal;
+    }
+    header .hamburger span{
+        padding-right: 10px;
+        font-size: 1.2rem;
+    }
+    header .hamburger:hover {
+        text-shadow: 2px 4px 14px #455074;
+        color: white;
+        cursor: pointer;
+    }
+
+    header button, .nav-menu {
+        display: none;
+    }
+    .left-content h1{
+        font-size: 6vw;
+    }
+    .right-content{
+        width: 50%;
+    }
+    .right-content img{
+        height: 460px;
+    }
+    .promotions .image-container img {
+        height: 30vw;
+    }
+    
+}
+
+/* for 992px and less devices */
+@media screen and (max-width: 992px) {
+    .hero-section{
+        width: 100%;
+        margin: left 0;
+
+    }
+    .left-content {
+        min-width: -webkit-fill-available;
+        margin-top: 10px;
+    }
+    .left-content p{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .right-content img{
+        display: none;
+    } 
+    .promotions .image-container img {
+        height: 70vw;
+    }  
 }
