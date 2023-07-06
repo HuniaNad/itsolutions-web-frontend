@@ -4,6 +4,11 @@
     font-family: "Mulish", "sans-serif";
     font-size: 16px;
 }
+body {
+  margin:0px;
+  padding: 0px;
+  /* width: 100vw; */
+}
 
 
 .hero-section{    
@@ -57,7 +62,7 @@ header .hamburger {
 .left-content{
     color: white;
     padding-top: 100px;
-    width: 45%;
+    width: 52%;
     z-index: 1;
 }
 .left-content h1{
@@ -89,7 +94,9 @@ header .hamburger {
 
 /* for 1200px and less devices */
 @media only screen and (max-width: 1200px) {
-
+    .hero-section {
+        padding: 2rem 2rem;
+    }
     header .hamburger {
         display: block;
         background-color: transparent;
@@ -111,16 +118,36 @@ header .hamburger {
     header button, .nav-menu {
         display: none;
     }
+    .left-content h1{
+        font-size: 6vw;
+    }
+    .right-content{
+        width: 50%;
+    }
+    .right-content img{
+        height: 460px;
+    }
+    
 }
 
 /* for 992px and less devices */
 @media screen and (max-width: 992px) {
-    .left-content {
-        display: none;
-    }
-    .right-content img{
+    .hero-section{
         width: 100%;
-        height: auto;
+        margin: left 0;
+
+    }
+    .left-content {
+        min-width: -webkit-fill-available;
+        margin-top: 10px;
+    }
+    .left-content p{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .right-content img{
+        display: none;
     }   
 }
 
