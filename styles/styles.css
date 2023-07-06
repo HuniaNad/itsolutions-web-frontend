@@ -57,7 +57,8 @@ header .hamburger {
 .left-content{
     color: white;
     padding-top: 100px;
-    width: 540px;
+    width: 45%;
+    z-index: 1;
 }
 .left-content h1{
     font-size: 4rem;
@@ -77,13 +78,17 @@ header .hamburger {
 .left-content button:hover{
     box-shadow: 2px 4px 14px #080c18;
 }
+.right-content{
+    width: 70%;
+}
 .right-content img{
     position: absolute;
     height: 500px;
-    right: 85px;  
+    right: 60px;  
 }
 
-@media only screen and (max-width: 1100px) {
+/* for 1200px and less devices */
+@media only screen and (max-width: 1200px) {
 
     header .hamburger {
         display: block;
@@ -106,4 +111,15 @@ header .hamburger {
     header button, .nav-menu {
         display: none;
     }
+}
+
+/* for 992px and less devices */
+@media screen and (max-width: 992px) {
+    .left-content {
+        display: none;
+    }
+    .right-content img{
+        width: 100%;
+        height: auto;
+    }   
 }
