@@ -123,3 +123,66 @@ header .hamburger {
         height: auto;
     }   
 }
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 4rem;
+} 
+.services .headings{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.services .headings p{
+    color: #f8458a;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.services .headings h1{
+    width: 500px;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.gallery .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.gallery .item .logo-container {
+    box-shadow: 2px 12px 22px -6px #dcdde3;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.gallery .item .logo-container i {
+    color: #f8458a;
+    font-size: 1.5rem;
+}
+.gallery .item .service-heading {
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.gallery .item .service-desc {
+
+}
