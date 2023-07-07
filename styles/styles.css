@@ -4,3 +4,560 @@
     font-family: "Mulish", "sans-serif";
     font-size: 16px;
 }
+
+/******** Hero Section ********/
+
+.hero-section{    
+    background-image: linear-gradient(to right, #0a1f58, #080c18);
+    padding: 2rem 4rem;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav-menu{
+    margin-bottom: 0;
+    align-items: center;
+}
+header .nav-item{
+    list-style: none;
+    display: inline-block;
+}
+header .nav-item a{
+    text-decoration: none;
+    color: white;
+    padding-right: 3rem;
+}
+header .nav-item a:hover{
+    text-decoration: none;
+    color: #f8458a;
+}
+header button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+}
+header button:hover{
+    background-color: #f8458a;
+    color: white;
+    border: 1px solid #f8458a;
+}
+header .hamburger {
+    display: none;
+}
+
+.hero-section section {
+    display: flex;
+    margin-top: 40px;
+    height: 460px;
+}
+.left-content{
+    color: white;
+    padding-top: 100px;
+    width: 52%;
+    z-index: 1;
+}
+.left-content h1{
+    font-size: 4rem;
+}
+.left-content p{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.left-content button{
+    background-image: linear-gradient(#f8458a, #ff9913ee);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+}
+.left-content button:hover{
+    box-shadow: 2px 4px 14px #080c18;
+}
+.right-content{
+    width: 70%;
+}
+.right-content img{
+    position: absolute;
+    height: 500px;
+    right: 60px;  
+}
+
+/******** Services Section ********/
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 4rem;
+} 
+.services .headings{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.services .headings p{
+    color: #f8458a;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.services .headings h1{
+    width: 500px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.gallery .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.gallery .item .logo-container {
+    box-shadow: 2px 12px 22px -6px #dcdde3;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.gallery .item .logo-container i {
+    color: #f8458a;
+    font-size: 1.5rem;
+}
+.gallery .item .service-heading {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/******** Promotions Section ********/
+
+.promotions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 4rem;
+    background-color: #e2e8ff;
+    margin: 0 0 !important;
+}
+
+.promotions .notification-container {
+    background-color: #f8f9ff;
+    box-shadow: 2px 12px 22px -6px #afafb4;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+
+    position: absolute;
+    bottom: 220px;
+    left: 300px;
+}   
+.promotions .notification-container span {
+    background-color: #fae0ea;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.promotions .notification-container .feature-heading {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.promotions .notification-container p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.promotions .image-container .img {
+    position: relative;
+    
+}
+
+.business-container {
+    height: 500px;
+}
+.business-container h1 {
+    width: 300px;
+    font-weight: bold;
+}
+
+.business-container .item {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.business-container .item button{
+    background-color: #f8458a;
+    background-image: linear-gradient(#f8458a, #ff8f00c4);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+}
+.business-container button:hover{
+    box-shadow: 2px 4px 14px #777a86;
+}
+
+.business-container .item .logo-container {
+    background-color: #f8f9ff;
+    box-shadow: 2px 12px 22px -6px #c0c5e2;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.business-container .item .logo-container i {
+    color: #f8458a;
+    font-size: 1.5rem;
+}
+
+.business-container .headings {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.business-container .business-heading {
+    font-weight: bold;
+}
+.business-container .business-desc {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/******** Industries Section ********/
+
+.industries {
+    background-image: linear-gradient(to right, #02040a, #051258);
+    padding: 5rem 4rem;
+}
+.industries .headings p {
+    color: #f8458a;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.industries .headings .head h1 {
+    font-size: 3.4vw;
+    font-weight: bold;
+    color: white;
+    margin-right: 110px;
+    margin-bottom: 20px;
+}
+.industries .headings .desc p {
+    width: 400px;
+    color: white;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.industries .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.industries .gallery .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 1px 3px #a9a9a9;
+    margin: 10px;
+    padding: 40px;
+    width: 220px;
+}
+
+.industries .gallery .item i {
+    color: #f8458a;
+    font-size: 1.5rem;
+}
+.industries .gallery .item .service-heading {
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+.section-footer, .section-footer a {
+    text-align: center;
+    color: white;
+}
+.section-footer a {
+    text-decoration: underline;
+}
+.section-footer a:hover {
+    color: #f8458a;
+}
+
+/******** Partners Section ********/
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 4rem;
+}
+
+.partners .headings {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.partners .headings p{
+    margin: 0 13rem;
+}
+.partners .headings h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.partners button{
+    background-color: transparent;
+    color: #f8458a;
+    border: 1px solid #f8458a;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+    margin-top: 40px;
+}
+.partners button:hover{
+    background-image: linear-gradient(#f8458a, #ff9913ee);
+    color: white;
+    border: 1px solid white;
+}
+.partners .gallery .item {
+    padding: 0 60px;
+}
+
+
+/******** Products Section ********/
+
+.products {
+    border-top: 1px solid lightgrey;
+    padding: 5rem 4rem;
+}
+.products .heading h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.products .gallery .item img {
+    width: 100%;
+}
+.products .gallery .item .desc p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/******** Promo Video Section ********/
+
+.promovideo {
+    background: url('../assets/imgs/video_background.png') no-repeat;
+    height: auto;
+}
+.promovideo .container {
+    background-image: linear-gradient(#0000004a, #0100106b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 4rem;
+    max-width: 100%;
+}
+.promovideo .play-btn {
+    background-image: linear-gradient(#f8458a, #ff9913ee);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    line-height: normal;
+    width: 60px;
+    height: 60px;
+}
+.promovideo .play-btn i{
+    font-size: 1.5rem;
+}
+.promovideo .play-btn:hover {
+    box-shadow: 2px 20px 45px #787b7c;
+}
+.promovideo .heading {
+    width: 50%;
+}
+.promovideo h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0;
+}
+.promovideo .getstarted-btn {
+    background-color: white;
+    color: #f8458a;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: normal;
+}
+.promovideo .getstarted-btn:hover {
+    background-color: #f8458a;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f8458a;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: normal;
+}
+
+
+/* for 1200px and less devices */
+@media only screen and (max-width: 1200px) {
+    .hero-section, .services, .promotions, .partners, .products {
+        padding: 2rem 2rem;
+    }
+    header .hamburger {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 22px;
+        line-height: normal;
+    }
+    header .hamburger span{
+        padding-right: 10px;
+        font-size: 1.2rem;
+    }
+    header .hamburger:hover {
+        text-shadow: 2px 4px 14px #455074;
+        color: white;
+        cursor: pointer;
+    }
+
+    header button, .nav-menu {
+        display: none;
+    }
+    .left-content h1{
+        font-size: 6vw;
+    }
+    .right-content{
+        width: 50%;
+    }
+    .right-content img{
+        height: 460px;
+    }
+
+    .promotions .image-container .img img {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .promotions .notification-container {
+        background-color: #f8f9ff;
+        box-shadow: 2px 20px 31px #16171c;
+        width: 400px;
+        border-radius: 5px;
+        padding: 20px;
+        bottom: 0px;
+        left: 0px;
+        width: 92%;
+        margin: 4%;
+        margin-bottom: 3%;
+    }  
+    
+}
+
+/* for devices less than 992px */
+@media screen and (max-width: 991px) {
+    .hero-section{
+        width: 100%;
+    }
+    .left-content {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .left-content p{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .right-content{
+        display: none;
+    } 
+    .services .headings h1 {
+        font-size: 6vw;
+    }
+    .promotions {
+        padding: 2rem;
+    }
+    .business-container {
+        height: auto;
+    }
+    .business-container h1{
+        margin-top: 30px;
+    }
+    .business-container .item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .business-container .item span{
+        margin-bottom: 10px;
+    }
+    .partners .headings p{
+        margin: 0 2rem;
+    }
+    .promovideo .heading {
+        width: 100%;
+    }
+
+}
+
+/* for 576px and less devices */
+@media screen and (max-width: 576px) {
+    .services .headings h1 {
+        width: 400px;
+    }
+    .partners .headings h1 {
+        font-size: 1.5rem;
+    }
+    .partners .headings p{
+        margin: 0;
+    }
+    .products .gallery .item .desc p {
+        font-size: 1rem;
+    }
+    
+}
