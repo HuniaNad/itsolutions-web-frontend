@@ -658,5 +658,8 @@ footer .col4 .subscribe-field i:hover {
     .industries .headings .head h1 {
         font-size: 3.4vw;
     }
+    .copyright {
+        display: block;
+    }
     
 }
