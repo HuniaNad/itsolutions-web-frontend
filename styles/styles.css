@@ -88,6 +88,27 @@ header .hamburger {
     right: 60px;  
 }
 
+.hero-section .left-content .push-btn-container {
+    position: absolute;
+    top: 480px;
+    right: 10px;
+    display: none;
+    
+}
+.hero-section .left-content .push-btn {
+    background-image: none;
+    background-color: #f8458a;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 22px;
+    box-shadow: 2px 0px 17px -6px #dcdde3;
+}
+.hero-section .push-btn i {
+    font-size: 1.4rem;
+}
+
+
 /******** Services Section ********/
 
 .services{
@@ -289,8 +310,8 @@ header .hamburger {
     flex-direction: column;
     align-items: center;
     box-shadow: -1px 1px 3px #a9a9a9;
-    margin: 10px;
-    padding: 40px;
+    margin: 20px;
+    padding: 40px 30px;
     width: 220px;
 }
 
@@ -535,9 +556,6 @@ footer .col4 .subscribe-field i:hover {
 
 /* for 1200px and less devices */
 @media only screen and (max-width: 1200px) {
-    .hero-section, .services, .promotions, .partners, .products {
-        padding: 2rem 2rem;
-    }
     header .hamburger {
         display: block;
         background-color: transparent;
@@ -591,6 +609,43 @@ footer .col4 .subscribe-field i:hover {
 
 /* for devices less than 992px */
 @media screen and (max-width: 991px) {
+    .hero-section {
+        padding: 1px
+    }
+    header .hamburger {
+        padding-right: 0px
+    }
+    .services, .partners{
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .promotions, .products {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .industries, footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .partners .gallery, .services .gallery, .industries .gallery .item {
+        width: 100%;
+    }
+    .partners .gallery .item, .products .gallery .item {
+        padding: 0;
+    }
+    .products .gallery {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .products .gallery .img-container {
+        width: 90%;
+    }
+
+
+
+
+
+
     .hero-section{
         width: 100%;
     }
@@ -606,12 +661,13 @@ footer .col4 .subscribe-field i:hover {
     .right-content{
         display: none;
     } 
+    .hero-section .left-content .push-btn-container {
+        display: block;
+    }
     .services .headings h1 {
         font-size: 6vw;
     }
-    .promotions {
-        padding: 2rem;
-    }
+    
     .business-container {
         height: auto;
     }
