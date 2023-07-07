@@ -505,18 +505,16 @@ footer .col4 .subscribe-field i:hover {
     color: #f8458a;
 }
 
-.facebook, .instagram, .linkedin, .youtube {
-    margin: 10px;
+.social-logos a {
+    color: black;
+    text-decoration: none;
+    margin: 10px
 }
-
 .social-logos a:hover {
     color: #f8458a;
     text-decoration: none;
 }
-.social-logos a {
-    color: black;
-    text-decoration: none;
-}
+
 
 .copyright {
     display: flex;
