@@ -314,6 +314,8 @@ header .hamburger {
     color: #f8458a;
 }
 
+/******** Partners Section ********/
+
 .partners {
     display: flex;
     flex-direction: column;
@@ -352,8 +354,29 @@ header .hamburger {
     color: white;
     border: 1px solid white;
 }
-.gallery .item {
+.partners .gallery .item {
     padding: 0 60px;
+}
+
+
+/******** Products Section ********/
+.products {
+    border-top: 1px solid lightgrey;
+    padding: 5rem 4rem;
+}
+.products .heading h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.products .gallery .item img {
+    width: 100%;
+}
+.products .gallery .item .desc p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
 }
 
 
@@ -361,7 +384,7 @@ header .hamburger {
 
 /* for 1200px and less devices */
 @media only screen and (max-width: 1200px) {
-    .hero-section, .services, .promotions, .partners {
+    .hero-section, .services, .promotions, .partners, .products {
         padding: 2rem 2rem;
     }
     header .hamburger {
@@ -470,6 +493,9 @@ header .hamburger {
     }
     .partners .headings p{
         margin: 0;
+    }
+    .products .gallery .item .desc p {
+        font-size: 1rem;
     }
     
 }
