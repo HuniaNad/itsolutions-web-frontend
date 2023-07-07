@@ -128,7 +128,7 @@ header .hamburger {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .gallery .item .logo-container {
@@ -314,12 +314,54 @@ header .hamburger {
     color: #f8458a;
 }
 
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 4rem;
+}
+
+.partners .headings {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.partners .headings p{
+    margin: 0 13rem;
+}
+.partners .headings h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.partners button{
+    background-color: transparent;
+    color: #f8458a;
+    border: 1px solid #f8458a;
+    border-radius: 30px;
+    padding: 10px 22px;
+    line-height: normal;
+    margin-top: 40px;
+}
+.partners button:hover{
+    background-image: linear-gradient(#f8458a, #ff9913ee);
+    color: white;
+    border: 1px solid white;
+}
+.gallery .item {
+    padding: 0 60px;
+}
+
 
 
 
 /* for 1200px and less devices */
 @media only screen and (max-width: 1200px) {
-    .hero-section, .services, .promotions {
+    .hero-section, .services, .promotions, .partners {
         padding: 2rem 2rem;
     }
     header .hamburger {
@@ -412,6 +454,9 @@ header .hamburger {
     .business-container .item span{
         margin-bottom: 10px;
     }
+    .partners .headings p{
+        margin: 0 2rem;
+    }
 
 }
 
@@ -419,6 +464,12 @@ header .hamburger {
 @media screen and (max-width: 576px) {
     .services .headings h1 {
         width: 400px;
+    }
+    .partners .headings h1 {
+        font-size: 1.5rem;
+    }
+    .partners .headings p{
+        margin: 0;
     }
     
 }
