@@ -360,6 +360,7 @@ header .hamburger {
 
 
 /******** Products Section ********/
+
 .products {
     border-top: 1px solid lightgrey;
     padding: 5rem 4rem;
@@ -379,7 +380,65 @@ header .hamburger {
     text-align: left;
 }
 
+/******** Promo Video Section ********/
 
+.promovideo {
+    background: url('../assets/imgs/video_background.png') no-repeat;
+    height: auto;
+}
+.promovideo .container {
+    background-image: linear-gradient(#0000004a, #0100106b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 4rem;
+    max-width: 100%;
+}
+.promovideo .play-btn {
+    background-image: linear-gradient(#f8458a, #ff9913ee);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    line-height: normal;
+    width: 60px;
+    height: 60px;
+}
+.promovideo .play-btn i{
+    font-size: 1.5rem;
+}
+.promovideo .play-btn:hover {
+    box-shadow: 2px 20px 45px #787b7c;
+}
+.promovideo .heading {
+    width: 50%;
+}
+.promovideo h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0;
+}
+.promovideo .getstarted-btn {
+    background-color: white;
+    color: #f8458a;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: normal;
+}
+.promovideo .getstarted-btn:hover {
+    background-color: #f8458a;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #f8458a;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: normal;
+}
 
 
 /* for 1200px and less devices */
@@ -479,6 +538,9 @@ header .hamburger {
     }
     .partners .headings p{
         margin: 0 2rem;
+    }
+    .promovideo .heading {
+        width: 100%;
     }
 
 }
