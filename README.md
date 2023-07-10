@@ -13,7 +13,7 @@ $ git clone https://github.com/username/repository.git
 - Click on _*index.html*_ to open the project on your browser
 
 ## Deployed Links:
-Following are the project's deployed links on Neftlify and GitHub Pages:
+Following are the project's deployed links on Netlify and GitHub Pages:
 - [Netlify](https://github.com/HuniaNadeem-DevIntern/Frontend-Assignment-1)
 - [GitHub Pages](https://hunianadeem-devintern.github.io/Frontend-Assignment-1/)
 
