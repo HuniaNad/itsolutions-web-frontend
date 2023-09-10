@@ -14,7 +14,7 @@ $ git clone https://github.com/username/repository.git
 
 ## Deployed Links:
 Following are the project's deployed links on Netlify and GitHub Pages:
-- [Netlify](https://devsinc-ui-assignment1.netlify.app/)
-- [GitHub Pages](https://hunianadeem-devintern.github.io/Frontend-Assignment-1/)
+- [Netlify](https://itsolutions-frontend.netlify.app/)
+- [GitHub Pages](https://hunianad.github.io/itsolutions-web-frontend/)
 
 
